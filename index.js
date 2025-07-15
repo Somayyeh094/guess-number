@@ -16,7 +16,8 @@ function guess() {
     document.querySelector(".anouncement").textContent =
       "😉You must choose number in range!!!";
   } else if (+guessNumber === secretNumber) {
-    document.querySelector(".anouncement").textContent = "🥳You win the game";
+    document.querySelector(".anouncement").textContent =
+      "🥳You win the game!!!";
     document.querySelector(".secret-number").textContent = secretNumber;
     document.querySelector("body").style.backgroundColor = "rgb(56, 217, 31)";
     if (highestScoring < scoring) {
