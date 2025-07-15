@@ -14,22 +14,23 @@
   </head>
   <body>
     <header>
-      <button class="again">again</button>
-      <h4>(Numaber between 0-20)</h4>
+      <div class="grid-element"><button class="btn again">Again!</button></div>
+      <h4 class="grid-element">(Numaber between 0-20)</h4>
     </header>
-    <div class="block"></div>
+    <hr />
+
     <div class="secret-number">?</div>
-    <div class="positioning">
-      <div class="input">
+    <section class="positioning">
+      <div class="input grid-element">
         <input type="number" class="guess-number" />
-        <button class="guess">Guess!</button>
+        <button class="btn guess">Guess!</button>
       </div>
-      <div class="result">
-        <h3 class="anouncement">🫣 Starting to guess...</h3>
+      <div class="result grid-element">
+        <h4 class="anouncement">🫣 Starting to guess...</h4>
         <h5>💯 Score: <span class="score">20</span></h5>
         <h5>🤩 Highest Score: <span class="highest-score">0</span></h5>
       </div>
-    </div>
+    </section>
     <script src="index.js"></script>
   </body>
 </html>

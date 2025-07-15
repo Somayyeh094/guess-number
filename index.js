@@ -18,8 +18,6 @@ function guess() {
   } else if (+guessNumber === secretNumber) {
     document.querySelector(".anouncement").textContent = "🥳You win the game";
     document.querySelector(".secret-number").textContent = secretNumber;
-    document.querySelector(".secret-number").style.width = "200px";
-    document.querySelector(".secret-number").style.height = "200px";
     document.querySelector("body").style.backgroundColor = "rgb(56, 217, 31)";
     if (highestScoring < scoring) {
       highestScoring = scoring;
@@ -37,12 +35,11 @@ function guess() {
 function repeatGame() {
   document.querySelector(".anouncement").textContent = "🫣 Starting to guess...";
   document.querySelector(".secret-number").textContent = "?";
-  document.querySelector(".secret-number").style.width = "100px";
-  document.querySelector(".secret-number").style.height = "100px";
   document.querySelector("body").style.backgroundColor = "rgb(16, 16, 16)";
   document.querySelector(".guess-number").value = "";
   document.querySelector(".score").textContent = 20;
   scoring = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
 }
 
 document.querySelector(".guess").addEventListener("click", guess);
