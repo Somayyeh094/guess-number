@@ -8,15 +8,22 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
-  margin: 7% 2%;
+  margin: 5% 2%;
 }
 .btn {
   padding: 20px 40px;
-  border-radius: 10px;
   font-size: 24px;
   font-family: "Press Start 2P", system-ui;
   cursor: pointer;
   border: none;
+}
+header h4 {
+  display: flex;
+  justify-content: flex-end;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 20vh;
 }
 
 .secret-number {
@@ -28,9 +35,8 @@ header {
   line-height: 100px;
   text-align: center;
   position: relative;
-  top: -50px;
+  top: -55px;
   margin: auto;
-  border-radius: 10px;
 }
 .positioning {
   display: grid;
@@ -46,13 +52,14 @@ header {
 input {
   width: 50%;
   height: 50px;
-  border-radius: 10px;
   font-family: "Press Start 2P", system-ui;
   font-size: 20px;
   text-align: center;
-  border: none;
+  border: 2px solid white;
   display: block;
   margin: auto;
+  background: transparent;
+  color: white;
 }
 
 .guess {
