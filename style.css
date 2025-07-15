@@ -1,0 +1,62 @@
+body {
+  background-color: rgb(16, 16, 16);
+  color: white;
+  font-family: "Press Start 2P", system-ui;
+}
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.again,
+.guess {
+  margin: 20px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Press Start 2P", system-ui;
+  cursor: pointer;
+  border: none;
+}
+header h4 {
+  margin: 50px 40px;
+}
+.block {
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin-top: 15%;
+}
+.secret-number {
+  background: white;
+  color: black;
+  font-size: 52px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 46%;
+  top: -50px;
+  border-radius: 10px;
+}
+.positioning {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.input {
+  margin-left: 100px;
+}
+input {
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+}
+
+.guess {
+  margin: 20px 50px 20px 120px;
+}
