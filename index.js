@@ -5,6 +5,7 @@ let anounce = function (message) {
   return (document.querySelector(".anouncement").textContent = message);
 };
 let secretNumber = randomNumber();
+console.log(secretNumber);
 let scoring = 20;
 let highestScoring = 0;
 function giveScore() {
